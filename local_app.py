@@ -1,6 +1,6 @@
 from fastapi import FastAPI
 from pydantic import BaseModel
-from src.pipeline.local_prediction_pipeline import PredictionPipeline   # ✅ FIXED IMPORT
+from src.pipeline.local_prediction_pipeline import PredictionPipeline  
 
 app = FastAPI()
 
@@ -30,7 +30,7 @@ class ChurnRequest(BaseModel):
 
 @app.get("/")
 def home():
-    return {"message": "Churn Prediction API Running 🚀"}
+    return {"message": "Churn Prediction API Running "}
 
 
 @app.post("/predict")

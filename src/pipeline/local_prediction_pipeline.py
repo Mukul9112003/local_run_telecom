@@ -6,7 +6,7 @@ from src.utils.main_utils import load_object
 class PredictionPipeline:
     def __init__(self):
         try:
-            self.model_path = "artifact/25_04_2026_20_13_10/Model_Trainer/Model/model.pkl"
+            self.model_path = "artifact/25_04_2026_20_35_12/Model_Trainer/Model/model.pkl"
             self.model = load_object(self.model_path)
         except Exception as e:
             raise MyException(e) from e
